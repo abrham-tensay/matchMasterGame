@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(201, 79, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainDisplay{
+    display: grid;
+    grid-template-columns:repeat(4,100px);   
+    grid-gap: 8px;
+
+
+}
+
+/* .card{
+    background-color: black;
+    height: 100px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+
+} */
+
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 100px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
